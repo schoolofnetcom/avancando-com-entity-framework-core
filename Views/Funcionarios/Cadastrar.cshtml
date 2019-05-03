@@ -1,0 +1,10 @@
+@model EFCurso.Models.Funcionario
+<h2>Cadastro de funcionários</h2>
+
+<form class="form-horizontal" asp-controller="Funcionarios" asp-action="Salvar" method="POST">
+    <input type="hidden" asp-for="Id">
+    <input type="text" class="form-control" asp-for="Nome" placeholder="Nome">
+    <input type="number" class="form-control" asp-for="Salario" placeholder="Salário">
+    <input type="text" class="form-control" asp-for="Cpf" placeholder="CPF">
+    <button class="btn btn-success">Cadastrar</button>
+</form>
